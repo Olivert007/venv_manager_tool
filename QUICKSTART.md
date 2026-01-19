@@ -3,7 +3,7 @@
 ## 一键安装
 
 ```bash
-cd /mnt/data/wangj/workspace/tritonupstream/venv_manager_tool
+cd /path/to/venv_manager_tool
 ./install_venv_manager.sh
 source ~/.bashrc  # 或 source ~/.zshrc
 ```

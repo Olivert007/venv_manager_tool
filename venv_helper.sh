@@ -4,7 +4,7 @@
 # 提供便捷的命令来激活和退出虚拟环境
 
 # 虚拟环境基础路径
-VENV_BASE_PATH="/mnt/data/wangj/venvs"
+VENV_BASE_PATH="$HOME/venvs"
 
 # Python管理脚本路径（需要根据实际情况调整）
 VENV_MANAGER_SCRIPT="$(dirname "${BASH_SOURCE[0]}")/venv_manager.py"

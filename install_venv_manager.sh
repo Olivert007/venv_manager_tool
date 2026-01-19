@@ -111,7 +111,7 @@ echo -e "${COLOR_GREEN}✓ 配置已添加到 $RC_FILE${COLOR_RESET}"
 echo ""
 
 # 创建虚拟环境基础目录
-VENV_BASE_PATH="/mnt/data/wangj/venvs"
+VENV_BASE_PATH="$HOME/venvs"
 if [ ! -d "$VENV_BASE_PATH" ]; then
     mkdir -p "$VENV_BASE_PATH"
     echo -e "${COLOR_GREEN}✓ 创建虚拟环境目录: $VENV_BASE_PATH${COLOR_RESET}"

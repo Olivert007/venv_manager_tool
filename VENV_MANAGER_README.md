@@ -5,7 +5,7 @@
 ## 特性
 
 ✨ **核心功能**
-- 🚀 在统一路径 `/mnt/data/wangj/venvs` 下创建和管理虚拟环境
+- 🚀 在统一路径 `~/venvs` 下创建和管理虚拟环境
 - 🔄 简单的命令进入/退出虚拟环境
 - 🤖 进入环境时自动检测并安装PyTorch（使用ROCm 7.1）
 - 📋 查看所有虚拟环境列表及其状态
@@ -39,7 +39,7 @@ chmod +x venv_helper.sh
 
 ```bash
 # Python虚拟环境管理工具
-source /mnt/data/wangj/workspace/tritonupstream/venv_helper.sh
+source /path/to/venv_manager_tool/venv_helper.sh
 ```
 
 **注意**：请根据实际路径调整上述路径。
@@ -76,8 +76,8 @@ venv-list
 
 环境名称               Python版本       PyTorch版本           路径
 ------------------------------------------------------------------------------------------
-myproject            Python 3.10.12  2.7.0+git123456      /mnt/data/wangj/venvs/myproject
-test_env             Python 3.11.5   未安装                /mnt/data/wangj/venvs/test_env
+myproject            Python 3.10.12  2.7.0+git123456      ~/venvs/myproject
+test_env             Python 3.11.5   未安装                ~/venvs/test_env
 
 总计: 2 个虚拟环境
 ```
@@ -97,7 +97,7 @@ venv-enter myproject
 ```
 ✓ 已进入虚拟环境: myproject
 ℹ Python 3.10.12
-ℹ 路径: /mnt/data/wangj/venvs/myproject
+ℹ 路径: ~/venvs/myproject
 
 正在检查 PyTorch 安装状态...
 ⚠ PyTorch 未安装，开始自动安装...
@@ -118,7 +118,7 @@ venv-status
 当前虚拟环境:
   名称: myproject
   Python: Python 3.10.12
-  路径: /mnt/data/wangj/venvs/myproject
+  路径: ~/venvs/myproject
   PyTorch: 2.7.0+git123456
 ```
 
@@ -255,12 +255,12 @@ venv-delete old_project
 ### 文件结构
 
 ```
-/mnt/data/wangj/workspace/tritonupstream/
+/path/to/venv_manager_tool/
 ├── venv_manager.py       # Python管理脚本（核心逻辑）
 ├── venv_helper.sh        # Shell辅助脚本（命令封装）
 └── VENV_MANAGER_README.md   # 本文档
 
-/mnt/data/wangj/venvs/    # 所有虚拟环境存储位置
+~/venvs/                  # 所有虚拟环境存储位置
 ├── project1/
 ├── project2/
 └── ...

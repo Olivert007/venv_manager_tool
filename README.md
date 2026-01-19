@@ -4,7 +4,7 @@
 
 ## ✨ 特性
 
-- 🚀 统一管理所有虚拟环境在 `/mnt/data/wangj/venvs`
+- 🚀 统一管理所有虚拟环境在 `~/venvs`
 - 🔄 简单命令进入/退出虚拟环境
 - 🤖 自动检测并安装PyTorch（ROCm 7.1 nightly）
 - 📋 查看所有环境列表及状态
@@ -16,7 +16,7 @@
 ### 一键安装
 
 ```bash
-cd /mnt/data/wangj/workspace/tritonupstream/venv_manager_tool
+cd /path/to/venv_manager_tool
 ./install_venv_manager.sh
 source ~/.bashrc  # 或 source ~/.zshrc
 ```

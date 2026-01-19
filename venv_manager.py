@@ -13,7 +13,7 @@ from pathlib import Path
 import json
 
 # 虚拟环境基础路径
-VENV_BASE_PATH = Path("/mnt/data/wangj/venvs")
+VENV_BASE_PATH = Path.home() / "venvs"
 
 # PyTorch安装命令
 PYTORCH_INSTALL_CMD = [
